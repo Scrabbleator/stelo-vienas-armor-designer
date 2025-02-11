@@ -74,8 +74,6 @@ random_presets = [
     {"Helmet": "Bascinet", "Chestplate": "Lamellar Armor", "Cape": "Battle Cape", "Weapon": "Battle Axe"},
     {"Helmet": "Kettle Helm", "Chestplate": "Kavacha (South Indian)", "Cape": "None", "Weapon": "Scimitar"},
     {"Helmet": "Close Helm", "Chestplate": "Lorica Segmentata", "Cape": "Tattered Cloak", "Weapon": "Greatsword"},
-    {"Helmet": "Horned Helm", "Chestplate": "Scale Armor", "Cape": "Fur Mantle", "Weapon": "Mace"}
-]
-selected_preset = st.sidebar.selectbox("Choose a Random Preset", list(range(1, 8)), key
+    {"Helmet": "Horned Helm", "Chestplate": "Scale Armor", "Cape": "Fur Mantle", "
 ::contentReference[oaicite:0]{index=0}
  
