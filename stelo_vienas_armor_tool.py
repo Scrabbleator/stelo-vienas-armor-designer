@@ -1,9 +1,18 @@
 import streamlit as st
 import json
+from PIL import Image
 
 # ========== Initialize App ==========
 st.title("⚔️ Stelo Vienas Armor Customizer ⚔️")
 st.sidebar.header("Customize Your Armor")
+
+# ========== Display Armor Diagram ==========
+st.sidebar.subheader("Armor Layers Reference")
+try:
+    image = Image.open("static_armor_diagram.png")
+    st.sidebar.image(image, caption="Armor Layers Reference", use_column_width=True)
+except FileNotFoundError:
+    st.sidebar.error("Armor diagram image not found. Please ensure 'static_armor_diagram.png' is in the application directory.")
 
 # ========== Gender Selection ==========
 st.sidebar.subheader("🛡️ Select Gender")
@@ -71,9 +80,6 @@ random_presets = [
     {"Helmet": "Great Helm", "Chestplate": "Plate Armor", "Cape": "Royal Cloak", "Weapon": "Longsword"},
     {"Helmet": "Sallet", "Chestplate": "Brigandine", "Cape": "Fur Mantle", "Weapon": "Rapier"},
     {"Helmet": "Morion", "Chestplate": "Scale Armor", "Cape": "Tattered Cloak", "Weapon": "Warhammer"},
-    {"Helmet": "Bascinet", "Chestplate": "Lamellar Armor", "Cape": "Battle Cape", "Weapon": "Battle Axe"},
-    {"Helmet": "Kettle Helm", "Chestplate": "Kavacha (South Indian)", "Cape": "None", "Weapon": "Scimitar"},
-    {"Helmet": "Close Helm", "Chestplate": "Lorica Segmentata", "Cape": "Tattered Cloak", "Weapon": "Greatsword"},
-    {"Helmet": "Horned Helm", "Chestplate": "Scale Armor", "Cape": "Fur Mantle", "
+    {"Helmet": "Bascinet", "Chestplate": "Lamellar Armor", "Cape": "Battle Cape", "Weapon": "Battle Axe
 ::contentReference[oaicite:0]{index=0}
  
